@@ -45,9 +45,11 @@ Pixelbook's power button has a built-in 2fa/2sv key (think YubiKey), but it's di
 ```u2f_flags u2f```
 
 ### Install fonts
-- Copy any desired font .ttf file to ~/.local/share/fonts
-[Install recommended font for Powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) (_which will be installed later_)
-
+Create the fonts directory
+```mkdir -p ~/.local/share/fonts```
+Copy any desired font .ttf file to ~/.local/share/fonts
+While we're here, [install recommended font for Powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) (_which will be installed later_)
+Cache the newly installed fonts and verify they are in the right place:
 ```
 fc-cache -vf ~/.local/share/fonts
 fc-list | grep [your font name] # To verify
