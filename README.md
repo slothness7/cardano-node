@@ -7,10 +7,10 @@
 ```sudo passwd root```
 
 ### Setting a user password
-You must log in as root first
+First, log-in as root
 ```sudo su root```
-Check the users information before beginning
-```cat /etc/passwd```
+Change password. If this is the first time, it will not ask for current password.
+```passwd <username>```
 
 ### Give sudo access to non-root user
 If more detail is needed, [check this guide](https://linoxide.com/linux-how-to/add-user-to-sudoers-on-debian/)
