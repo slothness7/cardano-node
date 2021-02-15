@@ -12,15 +12,20 @@ First, log-in as root
 Change password. If this is the first time, it will not ask for current password.
 ```passwd <username>```
 
-### Give sudo access to non-root user
+### Give root & sudo access to non-root user
 If more detail is needed, [check this guide](https://linoxide.com/linux-how-to/add-user-to-sudoers-on-debian/)
+Add user to root group for easier Docker handling:
+```usermod -aG root <username>```
+Verify if this correctly added the user to the root group.
+```id <username>```
+You should see something like this where `0(root)` is attached to the user id.
+<img src="blob:chrome-untrusted://media-app/a7177af1-72e3-4e34-9a76-b9bf88c816f3" alt="Screenshot 2021-02-15 at 2.28.50 PM.png"/>
+
 Add user to sudoers group using the usermod command
 ```usermod -aG sudo <username>```
 Verify if this correctly added the user to the sudo group
-```
-id <username>
-uid=1000(username) gid=1000(username) groups=1000(username),27(username)
-```
+```id <username>```
+Similar to the above screenshot for root, you should see `27(sudo)` attached to the user id.
 Test the user with sudo priveleges. First, switch to the new user.
 ```su - username```
 Now, invoke the sudo command followed by any command. in this case, we will run the whoami command.
