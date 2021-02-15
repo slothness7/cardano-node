@@ -31,7 +31,7 @@ Verify if this correctly added the user to the root group.
 id <username>
 ```
 You should see something like this where `0(root)` is attached to the user id.
-<img src="blob:chrome-untrusted://media-app/8da1a8f1-bea5-411b-9fe6-12c643574355" alt="add-user-to-root.png"/>
+![user-root-privileges](images/add-user-to-root.png)
 
 Add user to sudoers group using the usermod command
 ```
