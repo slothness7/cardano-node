@@ -17,8 +17,9 @@ If more detail is needed, [check this guide](https://linoxide.com/linux-how-to/a
 Add user to sudoers group using the usermod command
 ```usermod -aG sudo <username>```
 Verify if this correctly added the user to the sudo group
-```id jack
-uid=1000(username) gid=1000(username) groups=1000(jack),27(username)
+```
+id <username>
+uid=1000(username) gid=1000(username) groups=1000(username),27(username)
 ```
 Test the user with sudo priveleges. First, switch to the new user.
 ```su - username```
