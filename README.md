@@ -166,11 +166,12 @@ For manual installation (_which can be used with or without a plugin manager_):
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
+## Install Essential Applications
 
-## Install VSCode
+### Install VSCode
 Download the .deb install file from [VSCode](https://code.visualstudio.com/)
 
-### Set VSCode as default text editor
+#### Set VSCode as default text editor
 ```
 sudo update-alternatives --set editor /usr/bin/code
 ```
@@ -179,22 +180,29 @@ If Visual Studio Code doesn't show up as an alternative to editor, you need to r
 sudo update-alternatives --install editor /usr/bin/editor $(which code)
 ```
 
-### If there are keychain issues after syncing VSCode with GitHub 
+#### If there are keychain issues after syncing VSCode with GitHub 
 [A good explanation of the keyring concept for Ubuntu and how to use it](https://itsfoss.com/ubuntu-keyring/)</br>
 Installing gnome-keyring usually works:
 ```
 sudo apt install gnome-keyring
 ```
 
-## Install Docker
+### Install Docker
 - Follow debian installation instructions at [Docker](https://docs.docker.com/engine/install/debian/)
 - Make sure to follow [post-installation instructions](https://docs.docker.com/engine/install/linux-postinstall/) to improve usability
 - [Install Docker-Compase](https://docs.docker.com/compose/install/) (_be sure to follow the Linux instructions_)
 
-## Install Node.JS
+### Install Node.JS
  - Follow instructions at [nodejs.org's website](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions), specific to the Debian linux distro
 
-### Make sure to back-up all of this to make re-installing or copying to a remote server easy
+### Using Create React App
+ - Follow instructions at [create react app's website](https://create-react-app.dev/docs/getting-started/#npx)</br>
+The current instructions say to use the following command (_as long as we're using npm 5.2+_):
+```
+npx create-react-app my-app
+```
+
+## Make sure to back-up all of this to make re-installing or copying to a remote server easy
 [Google: Back up & Restore Your Linux (Beta) Files and Apps](https://support.google.com/pixelbook/answer/9654926?hl=en&ref_topic=9146794)</br>
 Go to Settings > LInux > Backup & restore > Backup Linux apps and files
 
