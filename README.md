@@ -21,7 +21,7 @@ passwd <username>
 ```
 
 ### Give root & sudo access to non-root user
-If more detail is needed, [check this guide](https://linoxide.com/linux-how-to/add-user-to-sudoers-on-debian/)
+If more detail is needed, [check this guide](https://linoxide.com/linux-how-to/add-user-to-sudoers-on-debian/)</br>
 Add user to root group for easier Docker handling:
 ```
 usermod -aG root <username>
@@ -41,7 +41,7 @@ Verify if this correctly added the user to the sudo group
 ```
 id <username>
 ```
-Similar to the above screenshot for root, you should see `27(sudo)` attached to the user id.
+Similar to the above screenshot for root, you should see `27(sudo)` attached to the user id.</br>
 Test the user with sudo priveleges. First, switch to the new user.
 ```
 su - username
@@ -71,8 +71,8 @@ Create the fonts directory
 ```
 mkdir -p ~/.local/share/fonts
 ```
-Copy any desired font .ttf file to `~/.local/share/fonts`
-While we're here, [install recommended font for Powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) (_which will be installed later_)
+Copy any desired font .ttf file to `~/.local/share/fonts`</br>
+While we're here, [install recommended font for Powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) (_which will be installed later_)</br>
 Cache the newly installed fonts and verify they are in the right place:
 ```
 fc-cache -vf ~/.local/share/fonts
@@ -80,7 +80,7 @@ fc-list | grep [your font name] # To verify
 ```
 
 ### Install zsh and oh-my-zsh
-[Easy installation instructions from this blog for Ubuntu 20.04 ](https://chrisrmiller.com/install-zsh-and-oh-my-zsh-on-ubuntu-20-04/)
+[Easy installation instructions from this blog for Ubuntu 20.04 ](https://chrisrmiller.com/install-zsh-and-oh-my-zsh-on-ubuntu-20-04/)</br>
 Make sure everything is up to date and install prerequisites
 ```
 sudo apt-get install build-essential curl file git
@@ -110,7 +110,7 @@ chsh -s /bin/zsh
 ```
 
 ### Install zsh-antigen plugin manager
-[Antigen's GitHub Repo](https://github.com/zsh-users/antigen)
+[Antigen's GitHub Repo](https://github.com/zsh-users/antigen)</br>
 Install Antigen from the main repository
 ```
 curl -L git.io/antigen > antigen.zsh
@@ -145,15 +145,15 @@ antigen theme robbyrussell
 # Tell Antigen that you're done.
 antigen apply
 ```
-To add more plugins, go to the [official repo](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to get the name of the plugin you want to add
-Add this line, replacing with the plugin name when you are in the `vi ~/.zshrc` file
+To add more plugins, go to the [official repo](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to get the name of the plugin you want to add.</br>
+Add the line below, replacing with the plugin name when you are in the `vi ~/.zshrc` file
 ```
 antigen bundle {repoName}
 ```
 
 ### Install Powerlevel10k
-[Powerlevel10k GitHub Repo](https://github.com/romkatv/powerlevel10k)
-If already using Antigen, simply go the following:
+[Powerlevel10k GitHub Repo](https://github.com/romkatv/powerlevel10k)</br>
+If already using Antigen, simply do the following:</br>
 Add `antigen theme romkatv/powerlevel10k` to `~/.zshrc`. Make sure that `antigen apply` is somewhere after it.
 
 If only using `Oh-My-Zsh` without Antigen:
@@ -180,7 +180,7 @@ sudo update-alternatives --install editor /usr/bin/editor $(which code)
 ```
 
 ### If there are keychain issues after syncing VSCode with GitHub 
-[A good explanation of the keyring concept for Ubuntu and how to use it](https://itsfoss.com/ubuntu-keyring/)
+[A good explanation of the keyring concept for Ubuntu and how to use it](https://itsfoss.com/ubuntu-keyring/)</br>
 Installing gnome-keyring usually works:
 ```
 sudo apt install gnome-keyring
@@ -192,6 +192,6 @@ sudo apt install gnome-keyring
 - [Install Docker-Compase](https://docs.docker.com/compose/install/)(_be sure to follow the Linux instructions_)
 
 ### Make sure to back-up all of this to make re-installing or copying to a remote server easy
-[Google: Back up & Restore Your Linux (Beta) Files and Apps](https://support.google.com/pixelbook/answer/9654926?hl=en&ref_topic=9146794)
+[Google: Back up & Restore Your Linux (Beta) Files and Apps](https://support.google.com/pixelbook/answer/9654926?hl=en&ref_topic=9146794)</br>
 Go to Settings > LInux > Backup & restore > Backup Linux apps and files
 
