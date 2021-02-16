@@ -193,7 +193,10 @@ sudo apt install gnome-keyring
 - [Install Docker-Compase](https://docs.docker.com/compose/install/) (_be sure to follow the Linux instructions_)
 
 ### Install Node.JS
- - Follow instructions at [nodejs.org's website](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions), specific to the Debian linux distro
+ - Follow instructions at [nodejs.org's website](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions), specific to Debian
+
+### Install Yarn
+ - Follow instructions at [yarn's official website](https://classic.yarnpkg.com/en/docs/install/#debian-stable), specific to Debian
 
 ### Using Create React App
  - Follow instructions at [create react app's website](https://create-react-app.dev/docs/getting-started/#npx)</br>
