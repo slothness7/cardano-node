@@ -189,6 +189,7 @@ sudo apt install gnome-keyring
 ### Install Docker
 - Follow debian installation instructions at [Docker](https://docs.docker.com/engine/install/debian/)
 - Make sure to follow [post-installation instructions](https://docs.docker.com/engine/install/linux-postinstall/) to improve usability
+- [Install Docker-Compase](https://docs.docker.com/compose/install/)(_be sure to follow the Linux instructions_)
 
 ### Make sure to back-up all of this to make re-installing or copying to a remote server easy
 [Google: Back up & Restore Your Linux (Beta) Files and Apps](https://support.google.com/pixelbook/answer/9654926?hl=en&ref_topic=9146794)
