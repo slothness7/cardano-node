@@ -1,6 +1,6 @@
 # Pixelbook Dev Setup
 
-### Initial setup of container
+## Initial setup of container
 ```
 sudo apt-get update && sudo apt-get dist-upgrade
 ```
@@ -79,7 +79,7 @@ fc-cache -vf ~/.local/share/fonts
 fc-list | grep [your font name] # To verify
 ```
 
-### Install zsh and oh-my-zsh
+## Install zsh and oh-my-zsh
 [Easy installation instructions from this blog for Ubuntu 20.04 ](https://chrisrmiller.com/install-zsh-and-oh-my-zsh-on-ubuntu-20-04/)</br>
 Make sure everything is up to date and install prerequisites
 ```
@@ -167,7 +167,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
-### Install VSCode
+## Install VSCode
 Download the .deb install file from [VSCode](https://code.visualstudio.com/)
 
 ### Set VSCode as default text editor
@@ -186,10 +186,13 @@ Installing gnome-keyring usually works:
 sudo apt install gnome-keyring
 ```
 
-### Install Docker
+## Install Docker
 - Follow debian installation instructions at [Docker](https://docs.docker.com/engine/install/debian/)
 - Make sure to follow [post-installation instructions](https://docs.docker.com/engine/install/linux-postinstall/) to improve usability
 - [Install Docker-Compase](https://docs.docker.com/compose/install/) (_be sure to follow the Linux instructions_)
+
+## Install Node.JS
+ - Follow instructions at [nodejs.org's website](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions), specific to the Debian linux distro
 
 ### Make sure to back-up all of this to make re-installing or copying to a remote server easy
 [Google: Back up & Restore Your Linux (Beta) Files and Apps](https://support.google.com/pixelbook/answer/9654926?hl=en&ref_topic=9146794)</br>
